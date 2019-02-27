@@ -7,6 +7,26 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// Tim phan tu lon thu nhat lon thu hai cua mang 
+//		int max=0;
+//		int arrA[] = new int [5];
+//		arrA[0] = 1;
+//		arrA[1] = 3;
+//		arrA[2] = 4;
+//		arrA[3] = 11;
+//		arrA[4] = 20;
+//		
+//		for (int i = 0; i < arrA.length; i++) {
+//			 if(max < arrA[i]) {
+//				 max = arrA[i]; 
+//			 }
+//			 
+//		}
+//		System.out.println("Max "+ max);
+		
+		
+		
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("-----------Bee hive------------");
 		int choiceentry;
@@ -79,6 +99,31 @@ public class Main {
 			            wokerbee4.randomHealth();
 			            wokerbee4.statusDeal();
 			            System.out.println(wokerbee4);
+			            
+			            // kiem tra khi tat ca cac ong deu da chet 
+			            String dronedead1 = drone1.allstatusBee();
+			            String dronedead2 = drone2.allstatusBee();
+			            String dronedead3 = drone3.allstatusBee();
+			            
+			            String qdead1 = queebee1.allstatusBee();
+			            String qdead2 = queebee2.allstatusBee();
+			            String qdead3 = queebee3.allstatusBee();
+			            
+			            String wo1 = wokerbee1.allstatusBee();
+			            String wo2 = wokerbee2.allstatusBee();
+			            String wo3 = wokerbee3.allstatusBee();
+			            String wo4 = wokerbee4.allstatusBee();
+			            
+			            if(dronedead1.equals("dead") && dronedead2.equals("dead") 
+			            && dronedead3.equals("dead") && qdead1.equals("dead") 
+			            && qdead2.equals("dead")  && qdead3.equals("dead") 
+			            && wo1.equals("dead") && wo2.equals("dead") 
+			            && wo3.equals("dead") && wo4.equals("dead"))
+			            {
+			            	    System.out.println("------------------");
+			            		System.out.println("All bees are dead");
+			            		System.out.println("------------------");
+			            }
 			            
 			            break;
 			        case 3: 

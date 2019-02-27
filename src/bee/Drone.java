@@ -76,4 +76,15 @@ public class Drone extends Health {
 		return String.format("%-10d%-20s%-10d%-20s",number,name,health,status);
 	}
 	
+	
+	@Override
+	public String allstatusBee() {
+		// TODO Auto-generated method stub
+		String death = statusDeal();
+		if(death.equals(death)) { 
+			return "dead";
+		}
+		return "dead";
+	}
+	
 }
