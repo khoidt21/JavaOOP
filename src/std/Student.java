@@ -7,6 +7,28 @@ public class Student {
 	private float diemLT;
 	private float diemTH;
 	
+	//select in (select )
+	/*
+	a[15,3,5]
+			
+	for( a)
+		
+	if(3)
+		fizz
+		else (5)
+		 buzz
+		 else 15 
+		 fizz buzz
+	/*
+	 * 
+	 */
+	/*
+	class element 
+	class cat extends element
+	
+	element a = new cat
+	cat c = new element 
+	*/
 	
 	public Student() {
 		// TODO Auto-generated constructor stub
@@ -45,7 +67,8 @@ public class Student {
 		return (diemLT + diemTH) % 2;
 	}
 	public String toString() {
-		return id + " " + name + " " + diemLT + " " + diemTH;
+		//return id + " " + name + " " + diemLT + " " + diemTH;
+		return String.format("%-10d%-20s%-10.2f%-10.2f%-10.2f", id, name, diemLT, diemTH, calDTB());
 	}
 	
 }
