@@ -7,25 +7,42 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Tim phan tu lon thu nhat lon thu hai cua mang 
-//		int max=0;
-//		int arrA[] = new int [5];
-//		arrA[0] = 1;
-//		arrA[1] = 3;
-//		arrA[2] = 4;
-//		arrA[3] = 11;
-//		arrA[4] = 20;
-//		
-//		for (int i = 0; i < arrA.length; i++) {
-//			 if(max < arrA[i]) {
-//				 max = arrA[i]; 
-//			 }
-//			 
-//		}
-//		System.out.println("Max "+ max);
+		// Tim phan tu lon thu nhat lon thu hai cua mang
 		
-		
-		
+		//int max=0;
+		/*
+		int j;
+		int temp = 0;
+		int arrA[] = {11,1,2,3,5};
+		for (int i = 0; i < arrA.length; i++) {
+			for(j = i + 1;j < arrA.length;j++) {
+				if(arrA[i] > arrA[j]) {
+					temp = arrA[i];
+					arrA[i] = arrA[j];
+					arrA[j] = temp;
+				}
+			}
+		}
+		//System.out.println("Max "+ max);
+		System.out.println("Mang sau khi sap xep lai: ");
+		for (int i = 0; i < arrA.length; i++) {
+			System.out.println(arrA[i]);
+			
+		}
+		int max = arrA[0];
+		for (int i = 1; i < arrA.length; i++) {
+			if(arrA[i] > max)
+				max = arrA[i];
+		}
+		int max2 = arrA[0];
+		for (int i = 1; i < arrA.length; i++) {
+			if(arrA[i] > max2 && arrA[i] < max) {
+				max2 = arrA[i];
+			}
+		}
+		System.out.println("Phan tu lon nhat: " + max);
+		System.out.println("Phan tu lon thu 2: " + max2);
+		*/
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("-----------Bee hive------------");
